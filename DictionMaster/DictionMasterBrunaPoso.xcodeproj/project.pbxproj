@@ -21,7 +21,7 @@
 
 /* Begin PBXFileReference section */
 		F6B7AEF82B710CE2009BB136 /* Diction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diction.swift; sourceTree = "<group>"; };
-		F6E7EA552B6FEDBC00B12ADB /* DictionMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E7EA552B6FEDBC00B12ADB /* DictionMasterBrunaPoso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionMasterBrunaPoso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E7EA582B6FEDBC00B12ADB /* DictionMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionMasterApp.swift; sourceTree = "<group>"; };
 		F6E7EA5A2B6FEDBC00B12ADB /* DictionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionMainView.swift; sourceTree = "<group>"; };
 		F6E7EA5C2B6FEDBE00B12ADB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		F6E7EA562B6FEDBC00B12ADB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6E7EA552B6FEDBC00B12ADB /* DictionMaster.app */,
+				F6E7EA552B6FEDBC00B12ADB /* DictionMasterBrunaPoso.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F6E7EA542B6FEDBC00B12ADB /* DictionMaster */ = {
+		F6E7EA542B6FEDBC00B12ADB /* DictionMasterBrunaPoso */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F6E7EA682B6FEDBE00B12ADB /* Build configuration list for PBXNativeTarget "DictionMaster" */;
+			buildConfigurationList = F6E7EA682B6FEDBE00B12ADB /* Build configuration list for PBXNativeTarget "DictionMasterBrunaPoso" */;
 			buildPhases = (
 				F6E7EA512B6FEDBC00B12ADB /* Sources */,
 				F6E7EA522B6FEDBC00B12ADB /* Frameworks */,
@@ -126,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = DictionMaster;
+			name = DictionMasterBrunaPoso;
 			productName = DictionMaster;
-			productReference = F6E7EA552B6FEDBC00B12ADB /* DictionMaster.app */;
+			productReference = F6E7EA552B6FEDBC00B12ADB /* DictionMasterBrunaPoso.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F6E7EA502B6FEDBC00B12ADB /* Build configuration list for PBXProject "DictionMaster" */;
+			buildConfigurationList = F6E7EA502B6FEDBC00B12ADB /* Build configuration list for PBXProject "DictionMasterBrunaPoso" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F6E7EA542B6FEDBC00B12ADB /* DictionMaster */,
+				F6E7EA542B6FEDBC00B12ADB /* DictionMasterBrunaPoso */,
 			);
 		};
 /* End PBXProject section */
@@ -377,7 +377,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F6E7EA502B6FEDBC00B12ADB /* Build configuration list for PBXProject "DictionMaster" */ = {
+		F6E7EA502B6FEDBC00B12ADB /* Build configuration list for PBXProject "DictionMasterBrunaPoso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6E7EA662B6FEDBE00B12ADB /* Debug */,
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F6E7EA682B6FEDBE00B12ADB /* Build configuration list for PBXNativeTarget "DictionMaster" */ = {
+		F6E7EA682B6FEDBE00B12ADB /* Build configuration list for PBXNativeTarget "DictionMasterBrunaPoso" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F6E7EA692B6FEDBE00B12ADB /* Debug */,

@@ -1,7 +1,6 @@
 import SwiftUI
 import CoreData
 
-
 struct DictionMainView: View {
     
     @State private var tapSearchButton: Bool = false
