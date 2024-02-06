@@ -5,56 +5,57 @@ struct DictionMainView: View {
     
     @State private var tapSearchButton: Bool = false
     @State private var textField: String = ""
+    @ObservedObject var viewModel = DictionViewModel()
 
     var body: some View {
+        NavigationView {
+            VStack {
+                LanguageView().padding(.top, 30.0)
+                Spacer()
+                
+                TextField("Type a Word...",
+                          text: $textField,
+                          prompt:
+                            Text("Type a Word...")
+                    .foregroundColor(Color(hex: 0x052D39, alpha: 0.5))
+                    .font(.custom("SF Pro Rounded", size: 28)))
+                
+                .frame(width: 220.0)
+                .font(.title)
+                .fontWeight(.bold)
+                .foregroundColor(Color(hex: 0x052D39))
+                .multilineTextAlignment(.center)
+                
+                Spacer()
 
-        VStack {
-            HStack {
-                Image(.enIcon)
-                Text("English")
-                    .foregroundColor(Color(hex: 0x052D39))
-                    .multilineTextAlignment(.leading)
-                    .textCase(.uppercase)
-                    .font(.custom("SF Pro Rounded", size: 18))
-            }
-            .padding(.all, 12.0)
-            .frame(height: 40.0)
-            .background(Color(hex: 0x91A9B1, alpha: 0.1))
-            .cornerRadius(20.0)
+                if !textField.isEmpty {
+                    NavigationLink(
+                        destination: DefinitionView(viewModel: DefinitionViewModel(diction: viewModel.diction))
+                            .navigationBarHidden(true),
+                        isActive: $tapSearchButton
+                    ) {
+                        Button(action: {
+                            viewModel.fetchData(word: textField.lowercased())
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: {
+                                tapSearchButton = true
+                            })
 
-            Spacer()
-
-            TextField("Type a Word...",
-                      text: $textField,
-                      prompt:
-                        Text("Type a Word...")
-                .foregroundColor(Color(hex: 0x052D39, alpha: 0.5))
-                .font(.custom("SF Pro Rounded", size: 28)))
-            
-            .frame(width: 220.0)
-            .font(.title)
-            .fontWeight(.bold)
-            .foregroundColor(Color(hex: 0x052D39))
-            .multilineTextAlignment(.center)
-            
-            Spacer()
-            
-            if !textField.isEmpty {
-                Button(action: {
-                    self.tapSearchButton.toggle()
-                }) {
-                    Text("Search")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .fontWeight(.bold)
-                        .textCase(.uppercase)
+                        }) {
+                            Text("Search")
+                                .font(.headline)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .textCase(.uppercase)
+                                .frame(width: 358.0, height: 64.0)
+                                .background(Color(hex: 0x5BD6FD))
+                                .cornerRadius(14.0)
+                        }
+                    }
                 }
-                .frame(width: 358.0, height: 64.0)
-                .background(Color(hex: 0x5BD6FD))
-                .cornerRadius(14.0)
             }
+            .padding(.bottom, 20.0)
         }
-        .padding(.vertical, 20.0)
     }
 }
 

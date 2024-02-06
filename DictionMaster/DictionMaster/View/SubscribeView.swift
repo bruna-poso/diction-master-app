@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct SubscribeView: View {
-    @State private var tapSearchButton: Bool = false
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         
@@ -73,7 +73,7 @@ struct SubscribeView: View {
             .multilineTextAlignment(.center)
 
             Button(action: {
-                self.tapSearchButton.toggle()
+                dismiss()
             }) {
                 Text("Subscribe")
                     .font(.headline)

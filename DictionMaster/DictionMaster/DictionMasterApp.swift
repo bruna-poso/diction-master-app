@@ -6,6 +6,8 @@ struct DictionMasterApp: App {
 
     var body: some Scene {
         WindowGroup {
+//            let viewModel = DictionViewModel()
+//            DictionMainView(viewModel: viewModel)
             DictionMainView()
 //            SubscribeView()
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext)

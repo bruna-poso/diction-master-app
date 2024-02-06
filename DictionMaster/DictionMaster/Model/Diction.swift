@@ -1,23 +1,22 @@
 import Foundation
 
-struct Diction: Decodable {
-    let word: String
-    let phonetic: String
-    let phonetics: [DictionPhonetics]
-    let meanings: [DictionMeanings]
+struct Diction: Codable {
+    var word: String
+    var phonetics: [DictionPhonetics]
+    var meanings: [DictionMeanings]
 }
 
-struct DictionPhonetics: Decodable {
-    let text: String?
-    let audio: String?
+struct DictionPhonetics: Codable {
+    var text: String?
+    var audio: String
 }
 
-struct DictionMeanings: Decodable {
-    let partOfSpeech: String
-    let definitions: [DictionDefinitions]
+struct DictionMeanings: Codable {
+    var partOfSpeech: String
+    var definitions: [DictionDefinitions]
 }
 
-struct DictionDefinitions: Decodable {
-    let definition: String?
-    let example: String?
+struct DictionDefinitions: Codable {
+    var definition: String
+    var example: String?
 }

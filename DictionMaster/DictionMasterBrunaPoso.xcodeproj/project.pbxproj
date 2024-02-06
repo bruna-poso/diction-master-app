@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F6AD6D402B72A2E00014D769 /* DefinitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD6D3F2B72A2E00014D769 /* DefinitionViewModel.swift */; };
+		F6AD6D422B72A62A0014D769 /* AudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD6D412B72A62A0014D769 /* AudioViewModel.swift */; };
 		F6B7AEF92B710CE2009BB136 /* Diction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7AEF82B710CE2009BB136 /* Diction.swift */; };
+		F6D5EDC02B71199800A3F263 /* DictionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDBF2B71199800A3F263 /* DictionViewModel.swift */; };
+		F6D5EDC22B71217000A3F263 /* DefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDC12B71217000A3F263 /* DefinitionView.swift */; };
+		F6D5EDC52B713C2A00A3F263 /* AudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDC42B713C2A00A3F263 /* AudioView.swift */; };
+		F6D5EDC72B713E3E00A3F263 /* MeaningsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDC62B713E3E00A3F263 /* MeaningsView.swift */; };
+		F6D5EDCA2B713FC200A3F263 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDC92B713FC200A3F263 /* ExampleView.swift */; };
+		F6D5EDCC2B71579E00A3F263 /* DefinitionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDCB2B71579E00A3F263 /* DefinitionFooterView.swift */; };
+		F6D5EDCE2B715D2A00A3F263 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D5EDCD2B715D2A00A3F263 /* LanguageView.swift */; };
 		F6E7EA592B6FEDBC00B12ADB /* DictionMasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EA582B6FEDBC00B12ADB /* DictionMasterApp.swift */; };
 		F6E7EA5B2B6FEDBC00B12ADB /* DictionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E7EA5A2B6FEDBC00B12ADB /* DictionMainView.swift */; };
 		F6E7EA5D2B6FEDBE00B12ADB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E7EA5C2B6FEDBE00B12ADB /* Assets.xcassets */; };
@@ -20,7 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F6AD6D3F2B72A2E00014D769 /* DefinitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewModel.swift; sourceTree = "<group>"; };
+		F6AD6D412B72A62A0014D769 /* AudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewModel.swift; sourceTree = "<group>"; };
 		F6B7AEF82B710CE2009BB136 /* Diction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diction.swift; sourceTree = "<group>"; };
+		F6D5EDBF2B71199800A3F263 /* DictionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionViewModel.swift; sourceTree = "<group>"; };
+		F6D5EDC12B71217000A3F263 /* DefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionView.swift; sourceTree = "<group>"; };
+		F6D5EDC42B713C2A00A3F263 /* AudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioView.swift; sourceTree = "<group>"; };
+		F6D5EDC62B713E3E00A3F263 /* MeaningsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningsView.swift; sourceTree = "<group>"; };
+		F6D5EDC92B713FC200A3F263 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		F6D5EDCB2B71579E00A3F263 /* DefinitionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionFooterView.swift; sourceTree = "<group>"; };
+		F6D5EDCD2B715D2A00A3F263 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		F6E7EA552B6FEDBC00B12ADB /* DictionMasterBrunaPoso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionMasterBrunaPoso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E7EA582B6FEDBC00B12ADB /* DictionMasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionMasterApp.swift; sourceTree = "<group>"; };
 		F6E7EA5A2B6FEDBC00B12ADB /* DictionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionMainView.swift; sourceTree = "<group>"; };
@@ -51,6 +69,27 @@
 				F6B7AEF82B710CE2009BB136 /* Diction.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F6D5EDBE2B71195F00A3F263 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F6D5EDBF2B71199800A3F263 /* DictionViewModel.swift */,
+				F6AD6D3F2B72A2E00014D769 /* DefinitionViewModel.swift */,
+				F6AD6D412B72A62A0014D769 /* AudioViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F6D5EDC32B713C1700A3F263 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F6D5EDC42B713C2A00A3F263 /* AudioView.swift */,
+				F6D5EDC62B713E3E00A3F263 /* MeaningsView.swift */,
+				F6D5EDC92B713FC200A3F263 /* ExampleView.swift */,
+				F6D5EDCD2B715D2A00A3F263 /* LanguageView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F6E7EA4C2B6FEDBC00B12ADB = {
@@ -96,8 +135,12 @@
 		F6E7EA6E2B701CFB00B12ADB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F6D5EDC32B713C1700A3F263 /* Components */,
+				F6D5EDBE2B71195F00A3F263 /* ViewModel */,
 				F6E7EA6B2B6FFD4A00B12ADB /* Launch Screen.storyboard */,
 				F6E7EA5A2B6FEDBC00B12ADB /* DictionMainView.swift */,
+				F6D5EDC12B71217000A3F263 /* DefinitionView.swift */,
+				F6D5EDCB2B71579E00A3F263 /* DefinitionFooterView.swift */,
 				F6E7EA722B70356700B12ADB /* SubscribeView.swift */,
 			);
 			path = View;
@@ -182,13 +225,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AD6D402B72A2E00014D769 /* DefinitionViewModel.swift in Sources */,
 				F6E7EA652B6FEDBE00B12ADB /* DictionMaster.xcdatamodeld in Sources */,
+				F6D5EDC72B713E3E00A3F263 /* MeaningsView.swift in Sources */,
+				F6D5EDC52B713C2A00A3F263 /* AudioView.swift in Sources */,
 				F6E7EA712B701D3000B12ADB /* Color+Extension.swift in Sources */,
 				F6B7AEF92B710CE2009BB136 /* Diction.swift in Sources */,
 				F6E7EA622B6FEDBE00B12ADB /* Persistence.swift in Sources */,
 				F6E7EA5B2B6FEDBC00B12ADB /* DictionMainView.swift in Sources */,
 				F6E7EA592B6FEDBC00B12ADB /* DictionMasterApp.swift in Sources */,
+				F6D5EDC22B71217000A3F263 /* DefinitionView.swift in Sources */,
+				F6D5EDCC2B71579E00A3F263 /* DefinitionFooterView.swift in Sources */,
 				F6E7EA732B70356800B12ADB /* SubscribeView.swift in Sources */,
+				F6D5EDC02B71199800A3F263 /* DictionViewModel.swift in Sources */,
+				F6AD6D422B72A62A0014D769 /* AudioViewModel.swift in Sources */,
+				F6D5EDCE2B715D2A00A3F263 /* LanguageView.swift in Sources */,
+				F6D5EDCA2B713FC200A3F263 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
