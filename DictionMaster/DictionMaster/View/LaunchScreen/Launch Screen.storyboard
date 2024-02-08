@@ -22,7 +22,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="RWU-jb-kqJ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dictionIcon" translatesAutoresizingMaskIntoConstraints="NO" id="RWU-jb-kqJ" userLabel="dictionIcon">
                                 <rect key="frame" x="76" y="257" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                             </imageView>
@@ -41,7 +41,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon" width="138" height="138"/>
+        <image name="dictionIcon" width="138" height="138"/>
         <image name="title" width="218.66667175292969" height="92"/>
     </resources>
 </document>

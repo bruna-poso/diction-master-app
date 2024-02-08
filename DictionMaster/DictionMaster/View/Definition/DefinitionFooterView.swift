@@ -6,20 +6,18 @@ struct DefinitionFooterView: View {
     var word: String
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 8.0) {
             Text("That’s it for “\(word)”!")
-                .font(.system(size: 24))
-                .fontWeight(.bold)
+                .font(Font.custom("SFRounded-Ultralight", size: 24))
             Text("Try another search now!")
-                .font(.system(size: 16))
-                .fontWeight(.regular)
-            
+                .font(Font.custom("SFRounded-Regular", size: 16))
+                .padding(.bottom, 20.0)
+
             Button(action: {
                 dismiss()
             }) {
                 Text("New Search")
-                    .font(.headline)
-                    .fontWeight(.bold)
+                    .font(Font.custom("SFRounded-Ultralight", size: 18))
                     .foregroundColor(.white)
                     .textCase(.uppercase)
                     .frame(width: 358.0, height: 64.0)

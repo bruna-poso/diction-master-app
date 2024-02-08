@@ -9,19 +9,16 @@ struct MeaningsView: View {
         VStack(alignment: .leading) {
             VStack {
                 Text("\(index)) ")
-                    .font(Font.system(size: 16))
+                    .font(Font.custom("SFRounded-Ultralight", size: 16))
                     .foregroundColor(Color(hex: 0x052D39))
-                    .fontWeight(.bold)
                 +
                 Text("[\(partOfSpeech)] ")
-                    .font(Font.system(size: 16))
+                    .font(Font.custom("SFRounded-Ultralight", size: 16))
                     .foregroundColor(Color(hex: 0x052D3980, alpha: 0.4))
-                    .fontWeight(.bold)
                 +
                 Text(definition)
-                    .font(Font.system(size: 16))
+                    .font(Font.custom("SFRounded-Ultralight", size: 16))
                     .foregroundColor(Color(hex: 0x052D39))
-                    .fontWeight(.bold)
             }
             .padding([.horizontal, .top], 20.0)
             .padding(.bottom, 5.0)

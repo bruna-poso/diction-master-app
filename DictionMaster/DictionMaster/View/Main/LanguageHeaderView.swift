@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LanguageView: View {
+struct LanguageHeaderView: View {
     var body: some View {
         HStack {
             Image(.enIcon)
@@ -8,7 +8,7 @@ struct LanguageView: View {
                 .foregroundColor(Color(hex: 0x052D39))
                 .multilineTextAlignment(.leading)
                 .textCase(.uppercase)
-                .font(.custom("SF Pro Rounded", size: 18))
+                .font(Font.custom("SFRounded-Regular", size: 18))
         }
         .padding()
         .frame(height: 40.0)
@@ -18,5 +18,5 @@ struct LanguageView: View {
 }
 
 #Preview {
-    LanguageView()
+    LanguageHeaderView()
 }

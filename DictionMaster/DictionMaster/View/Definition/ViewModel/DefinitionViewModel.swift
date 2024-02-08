@@ -15,21 +15,25 @@ class DefinitionViewModel: ObservableObject {
     }
 
     var displayItems: [DefinitionItem] {
-        var items = [DefinitionItem]()
-
-        for (meaningIndex, meaning) in diction[0].meanings.enumerated() {
-            for (definitionIndex, definition) in meaning.definitions.enumerated() {
-                let totalDefinitionsBefore = diction[0].meanings[0..<meaningIndex].reduce(0) { $0 + $1.definitions.count }
-                let globalIndex = totalDefinitionsBefore + definitionIndex + 1
-
-                let displayItem = DefinitionItem(
-                    globalIndex: globalIndex,
-                    partOfSpeech: meaning.partOfSpeech,
-                    definition: definition.definition,
-                    example: definition.example
-                )
-
-                items.append(displayItem)
+        var items: [DefinitionItem] = []
+        
+        print(diction)
+        
+        if !diction.isEmpty {
+            for (meaningIndex, meaning) in diction[0].meanings.enumerated() {
+                for (definitionIndex, definition) in meaning.definitions.enumerated() {
+                    let totalDefinitionsBefore = diction[0].meanings[0..<meaningIndex].reduce(0) { $0 + $1.definitions.count }
+                    let globalIndex = totalDefinitionsBefore + definitionIndex + 1
+                    
+                    let displayItem = DefinitionItem(
+                        globalIndex: globalIndex,
+                        partOfSpeech: meaning.partOfSpeech,
+                        definition: definition.definition,
+                        example: definition.example
+                    )
+                    
+                    items.append(displayItem)
+                }
             }
         }
 

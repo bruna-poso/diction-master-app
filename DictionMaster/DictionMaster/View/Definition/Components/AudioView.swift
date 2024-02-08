@@ -19,8 +19,7 @@ struct AudioView: View {
                 .clipShape(Circle())
                 
                 Text(phoneticsInfo.text)
-                    .font(.system(size: 22))
-                    .fontWeight(.bold)
+                    .font(Font.custom("SFRounded-Ultralight", size: 22))
                     .foregroundColor(Color(hex: 0x052D39, alpha: 0.4))
                     .padding(.leading, 5.0)
             }

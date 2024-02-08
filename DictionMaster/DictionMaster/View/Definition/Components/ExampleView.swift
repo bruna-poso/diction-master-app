@@ -6,12 +6,11 @@ struct ExampleView: View {
     var body: some View {
         VStack {
             Text("• ")
-                .font(Font.system(size: 16))
+                .font(Font.custom("SFRounded-Ultralight", size: 16))
                 .foregroundColor(Color(hex: 0x052D39))
-                .fontWeight(.bold)
             +
             Text(example)
-                .font(Font.system(size: 16))
+                .font(Font.custom("SFRounded-Regular", size: 16))
                 .foregroundColor(Color(hex: 0x052D39))
                 .fontWeight(.regular)
         }
