@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DefinitionView: View {
     @ObservedObject var viewModel: DefinitionViewModel
-    
+
     var textField: String
     
     var body: some View {
@@ -23,7 +23,8 @@ struct DefinitionView: View {
             } else {
                 DefinitionErrorView(textField: textField)
             }
-        }.navigationBarHidden(true)
+        }
+        .navigationBarHidden(true)
     }
 }
 

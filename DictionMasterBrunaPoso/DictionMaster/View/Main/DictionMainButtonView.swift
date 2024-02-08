@@ -8,7 +8,7 @@ struct DictionMainButtonView: View {
     
     @Binding var textField: String
     
-    @ObservedObject private var viewModel = DictionViewModel()
+    @EnvironmentObject private var viewModel: DictionViewModel
 
     var body: some View {
         NavigationLink(

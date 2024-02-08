@@ -5,6 +5,8 @@ import Alamofire
 
 class DictionViewModel: ObservableObject {
     @Published var diction: [Diction] = []
+    
+    private let searchCache = NSCache<NSString, NSArray>()
 
     func fetchData(word: String) {
         if let cachedDiction = getCachedDiction(word: word) {
@@ -33,14 +35,14 @@ class DictionViewModel: ObservableObject {
     }
 
     func shouldAllowSearch(word: String) -> Bool {
-         if let cachedDiction = getCachedDiction(word: word) {
-             self.diction = cachedDiction
-             return true
-         } else if isSearchLimitExceeded() {
-             return false
-         }
+        if let cachedDiction = getCachedDiction(word: word) {
+            self.diction = cachedDiction
+            return true
+        } else if isSearchLimitExceeded() {
+            return false
+        }
 
-         return true
+        return true
     }
     
     private func isSearchLimitExceeded() -> Bool {
@@ -67,16 +69,14 @@ class DictionViewModel: ObservableObject {
     }
     
     private func getCachedDiction(word: String) -> [Diction]? {
-        if let cachedData = UserDefaults.standard.data(forKey: word),
-           let cachedDiction = try? JSONDecoder().decode([Diction].self, from: cachedData) {
+        if let cachedDiction = searchCache.object(forKey: word.lowercased() as NSString) as? [Diction] {
+            print(word.lowercased() as NSString)
             return cachedDiction
         }
         return nil
     }
 
     private func saveCacheDiction(word: String, data: [Diction]) {
-        if let encodedData = try? JSONEncoder().encode(data) {
-            UserDefaults.standard.set(encodedData, forKey: word)
-        }
+        searchCache.setObject(data as NSArray, forKey: word.lowercased() as NSString)
     }
 }
