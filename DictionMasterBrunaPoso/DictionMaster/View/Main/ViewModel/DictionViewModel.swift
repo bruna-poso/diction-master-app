@@ -22,7 +22,7 @@ class DictionViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.diction = decodedData
                     self.saveSearchToCoreData(word: word)
-                    self.cacheDiction(word: word, data: decodedData)
+                    self.saveCacheDiction(word: word, data: decodedData)
                     print(decodedData)
                 }
 
@@ -74,7 +74,7 @@ class DictionViewModel: ObservableObject {
         return nil
     }
 
-    private func cacheDiction(word: String, data: [Diction]) {
+    private func saveCacheDiction(word: String, data: [Diction]) {
         if let encodedData = try? JSONEncoder().encode(data) {
             UserDefaults.standard.set(encodedData, forKey: word)
         }
