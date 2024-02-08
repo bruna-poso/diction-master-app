@@ -70,7 +70,6 @@ class DictionViewModel: ObservableObject {
     
     private func getCachedDiction(word: String) -> [Diction]? {
         if let cachedDiction = searchCache.object(forKey: word.lowercased() as NSString) as? [Diction] {
-            print(word.lowercased() as NSString)
             return cachedDiction
         }
         return nil

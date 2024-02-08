@@ -5,18 +5,6 @@ struct PersistenceController {
 
     let container: NSPersistentContainer
 
-    static var preview: PersistenceController = {
-        let controller = PersistenceController(inMemory: true)
-
-        for _ in 0..<10 {
-            let language = History(context: controller.container.viewContext)
-            language.word = "Hello"
-            language.timestamp = Date()
-        }
-
-        return controller
-    }()
-
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "DictionMaster")
 
